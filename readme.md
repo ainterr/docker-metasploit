@@ -27,6 +27,12 @@ docker build metasploit -t metasploit
     docker exec -it --user root metasploit bash
     ```
 
+## Stopping
+
+```bash
+docker kill metasploit
+```
+
 ## Issues
 
 1. There's an issue with rb-readline and vt100 that breaks backspace inside of
