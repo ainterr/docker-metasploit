@@ -26,3 +26,9 @@ docker build metasploit -t metasploit
     ```bash
     docker exec -it --user root metasploit bash
     ```
+
+## Issues
+
+1. There's an issue with rb-readline and vt100 that breaks backspace inside of
+`msfconsole`. Launching `msfconsole` with the flag `-L` fixes this by using the
+original readline library.
